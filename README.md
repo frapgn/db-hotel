@@ -25,6 +25,11 @@ FROM `ospiti`
 WHERE `name` LIKE 'd%';
 ```
 * Calcola il totale degli ordini accepted
+```
+SELECT `status`, COUNT(price) AS 'mumero_prenotazioni', SUM(price) AS 'incasso_totale'
+FROM `pagamenti`
+WHERE `status` = 'accepted';
+```
 * Qual è il prezzo massimo pagato?
 * Seleziona gli ospiti riconosciuti con patente e nati nel 1975
 * Quanti posti letto ha l’hotel in totale?
