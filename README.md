@@ -36,4 +36,24 @@ SELECT MAX(price)
 FROM `pagamenti`;
 ```
 * Seleziona gli ospiti riconosciuti con patente e nati nel 1975
+```
+SELECT	name, 
+		lastname, 
+        document_type, 
+        DATE(date_of_birth) AS date,
+        YEAR(date_of_birth) AS year
+FROM `ospiti`
+WHERE `document_type` = 'Driver License'
+AND YEAR(date_of_birth) = '1975'
+```
+```
+SELECT	name, 
+		lastname, 
+        document_type, 
+        DATE(date_of_birth) AS date,
+        YEAR(date_of_birth) AS year
+FROM `ospiti`
+WHERE `document_type` = 'Driver License'
+AND LEFT(date_of_birth, 4) = '1975'
+```
 * Quanti posti letto ha l’hotel in totale?
