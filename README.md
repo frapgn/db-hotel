@@ -31,5 +31,9 @@ FROM `pagamenti`
 WHERE `status` = 'accepted';
 ```
 * Qual è il prezzo massimo pagato?
+```
+SELECT MAX(price)
+FROM `pagamenti`;
+```
 * Seleziona gli ospiti riconosciuti con patente e nati nel 1975
 * Quanti posti letto ha l’hotel in totale?
