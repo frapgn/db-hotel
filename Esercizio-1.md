@@ -1,6 +1,4 @@
-# DB-HOTEL
-<br/>
-## Esercizio 1
+# DB-HOTEL - Esercizio 1
 * Seleziona tutti gli ospiti che sono stati identificati con la carta di identità
 ```
 SELECT `name`, `lastname`, `document_type`
