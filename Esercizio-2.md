@@ -28,7 +28,11 @@ GROUP BY HOUR(`created_at`)
 
 - Quante prenotazioni ha fatto l’ospite che ha fatto più prenotazioni?
 ```
-
+!!! NON COMPLETA !!!
+SELECT 	`ospite_id`, 
+		COUNT(`ospite_id`)
+FROM `prenotazioni_has_ospiti`
+GROUP BY `ospite_id`
 ```
 
 ##Join
