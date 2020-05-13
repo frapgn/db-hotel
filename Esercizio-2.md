@@ -20,7 +20,10 @@ GROUP BY `stanza_id`
 
 - Fai una analisi per vedere se ci sono ore in cui le prenotazioni sono più frequenti
 ```
-
+SELECT 	HOUR(`created_at`) AS `ora_di_prenotazione`, 
+		COUNT(HOUR(`created_at`)) AS `n°_prenotazioni` 
+FROM `prenotazioni` 
+GROUP BY HOUR(`created_at`)
 ```
 
 - Quante prenotazioni ha fatto l’ospite che ha fatto più prenotazioni?
