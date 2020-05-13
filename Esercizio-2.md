@@ -1,5 +1,5 @@
-## Esercizio 2
-###Group by
+# DB-HOTEL - Esercizio 2
+##Group by
 - Conta gli ospiti raggruppandoli per anno di nascita
 ```
 SELECT YEAR(date_of_birth), COUNT(date_of_birth) FROM `ospiti` 
@@ -8,7 +8,8 @@ GROUP BY YEAR(date_of_birth)
 
 - Somma i prezzi dei pagamenti raggruppandoli per status
 ```
-
+SELECT `status`, SUM(`price`) FROM `pagamenti`
+GROUP BY `status` 
 ```
 
 - Conta quante volte è stata prenotata ogni stanza
@@ -26,7 +27,7 @@ GROUP BY YEAR(date_of_birth)
 
 ```
 
-###Join
+##Join
 - Come si chiamano gli ospiti che hanno fatto più di due prenotazioni?
 ```
 
