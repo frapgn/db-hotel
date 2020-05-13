@@ -14,7 +14,8 @@ GROUP BY `status`
 
 - Conta quante volte è stata prenotata ogni stanza
 ```
-
+SELECT `stanza_id`, COUNT(`stanza_id`) AS `n°_prenotazioni` FROM `prenotazioni` 
+GROUP BY `stanza_id`
 ```
 
 - Fai una analisi per vedere se ci sono ore in cui le prenotazioni sono più frequenti
